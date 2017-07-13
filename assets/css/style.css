@@ -4121,7 +4121,8 @@ a.thumbnail {
     box-shadow: none; }
 
 .title-bar {
-  padding: 0.5rem;
+  padding: 0;
+  margin-bottom: 20px;
   background: rgba(0, 0, 0, 0.7);
   color: #fefefe; }
   .title-bar::before, .title-bar::after {
@@ -4731,13 +4732,7 @@ html body div.sticky-container {
 html body nav.navbar {
   color: #FFFFFF; }
   html body nav.navbar a {
-    color: #FFFFFF; }
-
-html body .title-bar {
-  font-size: 10pt;
-  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
-  color: #fefefe;
-  padding: 0; }
+  color: #FFFFFF; }
 
 html body .page-template-template-home .homepage-slider-image {
   background-repeat: no-repeat;
