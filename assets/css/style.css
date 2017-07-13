@@ -4743,4 +4743,19 @@ html body .page-template-template-home .homepage-slider-image {
 
 html body .page-template-template-home .header #top-bar-menu .top-bar {
   background-color: rgba(0, 0, 0, 0.7);
-  border-bottom: 1px solid transparent; }
+  border-bottom: 1px solid transparent;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent; }
+
+html body .page-template-template-home .header #top-bar-menu .top-bar:before, html body .page-template-template-home .header #top-bar-menu .navbar:after {
+  content: " ";
+  display: table; }
+
+html body .page-template-template-home .header #top-bar-menu .top-bar:after {
+  clear: both; }
+
+@media (min-width: 768px) {
+  html body .page-template-template-home .header #top-bar-menu .top-bar {
+    border-radius: 4px; } }

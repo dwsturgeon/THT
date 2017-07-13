@@ -138,7 +138,18 @@ html {
 				.top-bar{
 					background-color: rgba(0, 0, 0, 0.7);
 					border-bottom: 1px solid transparent;
-				}
+				  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent; }
+  .top-bar:before, .navbar:after {
+    content: " ";
+    display: table; }
+  .top-bar:after {
+    clear: both; }
+  @media (min-width: 768px) {
+    .top-bar {
+      border-radius: 4px; } }
 			}
 		}
     }
