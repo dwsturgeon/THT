@@ -4122,7 +4122,7 @@ a.thumbnail {
 
 .title-bar {
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 20px!important;
   background: rgba(0, 0, 0, 0.7);
   color: #fefefe; }
   .title-bar::before, .title-bar::after {
