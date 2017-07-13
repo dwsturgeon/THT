@@ -4733,6 +4733,12 @@ html body nav.navbar {
   html body nav.navbar a {
     color: #FFFFFF; }
 
+html body .title-bar {
+  font-size: 10pt;
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  color: #fefefe;
+  padding: 0; }
+
 html body .page-template-template-home .homepage-slider-image {
   background-repeat: no-repeat;
   background-size: 0;
@@ -4740,9 +4746,3 @@ html body .page-template-template-home .homepage-slider-image {
   top: 0;
   left: 0;
   z-index: -1; }
-
-html body .title-bar {
-  font-size: 10pt;
-  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
-  color: #fefefe;
-  padding: 0; }
