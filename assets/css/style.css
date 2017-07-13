@@ -4740,3 +4740,7 @@ html body .page-template-template-home .homepage-slider-image {
   top: 0;
   left: 0;
   z-index: -1; }
+
+html body .page-template-template-home .header #top-bar-menu .top-bar {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid transparent; }
