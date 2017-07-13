@@ -4742,4 +4742,7 @@ html body .page-template-template-home .homepage-slider-image {
   z-index: -1; }
 
 html body .page-template .title-bar {
-  font-size: 10pt; }
+  font-size: 10pt;
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  color: #fefefe;
+  padding: 0; }
