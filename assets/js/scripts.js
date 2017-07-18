@@ -46,14 +46,19 @@ jQuery(document).ready(function() {
 		},
 		initHomepage = function() {
 			imageAdjust();
+			interpageNav();
+
 			$win.on('resize', function(event) {
 			  imageAdjust();
-			  setContainerHeight();
+			  setInterpageNavHeight();
+			  setSliderContainerHeight();
 			});
+
 			zindexImages();
+			
 			$sliderImages.css('display', 'none');
 			jQuery('div [data-slider-image="1"]' ).css('display', 'initial');
-			setContainerHeight();
+			setSliderContainerHeight();
 
 
 
@@ -76,7 +81,6 @@ jQuery(document).ready(function() {
 			}, 8000);
 
 
-
 		},
 
 		zindexImages = function() {
@@ -92,11 +96,69 @@ jQuery(document).ready(function() {
 			
 		},
 
-		setContainerHeight = function() {
+		setSliderContainerHeight = function() {
 			$sliderContainer.css({
 				'height':  (600 / 1600) * $win.width() + 'px'
 			});
+		},
+
+		interpageNav = function () {
+			var
+				$navBoxes = jQuery('.interpage-nav .interpage-nav-box'),
+				$navBoxImages = jQuery('.interpage-nav .interpage-nav-box .interpage-nav-box-background');;
+			
+			$navBoxes.each(function(index, el) {
+				jQuery(this).css({
+					
+					'height': (jQuery(this).width() / 637) * jQuery(this).width() + 'px'
+					
+				});
+			});
+
+			
+			$navBoxImages.each(function(index, el) {
+				jQuery(this).css({
+					'background-position': '0 ' + jQuery(this).height() + 'px'
+				});
+			});
+
+
+			//HOVER AND LEAVE FUNCTIONS
+			$navBoxImages.on('mouseover', function(event) {
+
+				event.preventDefault();
+				/* Act on the event */
+
+
+
+				jQuery(this).animate({
+					'background-position': '0 0',
+				},
+					'200',
+					function() {
+					/* stuff to do after animation is complete */
+				});
+
+				
+
+
+			}).on('mouseleave', function(event) {
+
+				event.preventDefault();
+				/* Act on the event */
+
+				
+				css({
+					'background-position': '0 ' + jQuery(this).height() + 'px'
+				});
+
+
+			});
+
+
 		};
+
+		
 
 		initHomepage();
 

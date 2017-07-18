@@ -93,6 +93,8 @@ html {
   }
 }
 
+
+
 //nav
 html{
 	body{
@@ -109,37 +111,46 @@ html{
 
 //home
 html {
-  body {
-		
-   .page-template-template-home {
+  body.page-template-template-home {
 
-      .homepage-slider-image {
-        background:{
-          repeat: no-repeat;
-          size: 0;
-        }
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
+
+
+    div.homepage-slider-image {
+      background:{
+        repeat: no-repeat;
+        size: 0;
       }
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
 
-      .sub-navi {
+    div.interpage-nav {
 
+      background-color: #e7decd;
+      div.interpage-nav-box {
+        padding: 0;
 
-        .construction-hover {
+        div.interpage-nav-box-background {
+          height: inherit;
+          padding:0;
+          width: 100%;
 
+          display: inline-flex;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          
+
+        h3 {
+          width: 100%;
+          margin: auto;
         }
 
-        .retail-hover {
-
         }
-
-        .multifamily-hover {
-
-        }
-      }	
-   }
+      }
+    }
+      
   }
 }
 

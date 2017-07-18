@@ -46,11 +46,8 @@ Template Name: Our Culture
 
 		    
 
-		    <?php for ($i=0; $i < count($sliderData); $i++) {
-
-					//
-
-					?>
+		    <?php for ($i=0; $i < count($sliderData); $i++) {?>
+		    
 					<div class="expanded row" style="">
 					  	<img width="100%" src="<?php echo($sliderData[$i][Image]); ?>" alt="<?php echo($sliderData[$i][Description]); ?>" />
 					  	<p><?php echo($sliderData[$i][Description]); ?></p>

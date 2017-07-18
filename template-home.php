@@ -51,32 +51,51 @@ include(get_template_directory() . '/parts/custom-post-types/page-elements.php')
   </div>
 	<div id="content">
 	
-		<div id="inner-content" class="row">
+		<div id="inner-content" class="row expanded">
 	
-		    <main id="main" class="large-12 medium-12 columns" role="main">
+		    <main id="main" class="large-12 medium-12 columns" role="main" style="">
+		    </main> <!-- end #main -->
 
-
-		    <div class="row">
-		    	<div class="large-12 medium-12 columns body-copy">
+		    <div class="row expanded" style="padding-top:0;">
+		    	<div class="large-8 medium-12 columns large-centered body-copy">
 		    		<?php echo($pageElementsData['BodyCopy']); ?>
 		    	</div>
 		    </div>
 
-		    <div class="row sub-navi">
-		    	<div class="large-4 medium-4 small-12 columns construction-hover">
-		    		
+		    <div class="row expanded interpage-nav">
+		    	<div class="large-4 medium-4 small-12 columns interpage-nav-box construction-hover" style="">
+
+		    		<div class="interpage-nav-box-background" style="background-image: url('<?php echo(get_template_directory_uri().'/assets/images/construction-hover.jpg'); ?>');">
+		    			
+		    			<h3 style="" align="center" v-align="middle">Construction</h3>
+		    		</div>
 		    	</div>
 
-		    	<div class="large-4 medium-4 small-12 columns retail-hover">
-		    		
+		    	<div class="large-4 medium-4 small-12 columns interpage-nav-box retail-hover" style="">
+		    		<div class="interpage-nav-box-background" style="background-image: url('<?php echo(get_template_directory_uri().'/assets/images/retail-hover.jpg'); ?>');">
+		    			
+		    			<h3 align="center" v-align="middle">Retail</h3>
+		    		</div>
 		    	</div>
 
-		    	<div class="large-4 medium-4 small-12 columns multifamily-hover">
-		    		
+		    	<div class="large-4 medium-4 small-12 columns interpage-nav-box multifamily-hover" style="">
+		    		<div class="interpage-nav-box-background" style="background-image: url('<?php echo(get_template_directory_uri().'/assets/images/multifamily-hover.jpg'); ?>');">
+		    			
+		    			<h3 align="center" v-align="middle">Multi-Family</h3>
+		    		</div>
 		    	</div>
 		    </div>
 
-			</main> <!-- end #main -->
+		    <div class="row expanded join-our-team" style="background-image: url('<?php echo(get_template_directory_uri().'/assets/images/wabash.jpg'); ?>');">
+		    	<div class="large-12 colums">
+		    		<div>
+		    			button
+		    		</div>
+		    		
+		    	</div>
+
+		    </div>
+			
 		    
 		</div> <!-- end #inner-content -->
 	

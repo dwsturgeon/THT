@@ -44,5 +44,5 @@
 
 		    //echo('<br/><br/>');
 
-		    //print_r($leadTeamData);
+		    //print_r($sliderData);
 ?>
